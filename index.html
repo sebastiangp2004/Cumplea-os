@@ -23,7 +23,8 @@
             width: 500px;
             font-size: 30px;
         }
-        .audio{
+
+        .audio {
             display: none;
         }
     </style>
@@ -48,7 +49,8 @@
         <h1 class=" tlt" data-in-effect="flipInY">Sergio</h1>
     </div><!--background-->
     <button class="btn" id="btn">Ver invitación</button>
-    <audio class="audio" src="audio/Himno de la champions League 2020-2021 - Pasion por el fútbol.mp3" autoplay controls></audio>
+    <audio class="audio" src="audio/Himno de la champions League 2020-2021 - Pasion por el fútbol.mp3" autoplay
+        controls></audio>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -58,17 +60,20 @@
         Swal.fire({
             title: '¡Estás invitado al cumple de Sergio!',
             text: '03 de agosto a las 2:00 PM Betania la Cumbre, Casa 32',
-            imageUrl: 'img/Invitacion.png', // Ruta del archivo que subiste
+            imageUrl: 'img/Invitacion.png',
             imageWidth: 800,
             width: 1200,
-            height: 1200,
             imageAlt: 'Invitación de cumpleaños',
-
             confirmButtonText: '¡Te Esperamos!',
             customClass: {
                 popup: 'swal2-border-radius'
             }
+        }).then(() => {
+            var audio = document.querySelector('.audio');
+            audio.pause();
+            audio.currentTime = 0; // Reinicia la música al inicio (opcional)
         });
+
     });
 </script>
 <script>
@@ -76,6 +81,7 @@
         var audio = document.querySelector('.audio');
         audio.play();
     });
+
 </script>
 <script>
     new WOW().init();
