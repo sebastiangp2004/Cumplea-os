@@ -481,9 +481,11 @@ h1 {
     cursor: pointer;
     white-space: nowrap;
     position: absolute;
-    top: 25%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 250px;
+    height: 80px;
 }
 
 
@@ -528,3 +530,8 @@ h1 {
 }
 
 
+@media only screen and (max-width: 600px) {
+    .tlt {
+        font-size: 42px;
+    }
+}
