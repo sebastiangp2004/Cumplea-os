@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Happy birthday cake | @coding.stella</title>
+    <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Asap:700,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="background">
+        <div class="star star-1" id="firststar"></div>
+
+        <div class="fof-wrapper">
+            <div class="animated-bounce mybounce">
+                <div class="fof-wrapper-inner bounceInLeft">
+                    <img src="http://redonion.se/img/codepen/fof/fof-ball3.png" width="372" height="372"
+                        class="fof-ball" />
+                    <div id="fireplace"></div>
+                </div><!--fof-wrapper-inner-->
+            </div><!--animated bounce-->
+        </div><!--fof-wrapper-->
+
+        <h1 class="tlt tlt-top" data-in-effect="flipInY"">MI Cumpleaños</h1>
+        <h1 class=" tlt" data-in-effect="flipInY">Sergio</h1>
+    </div><!--background-->
+    <button class="btn" id="btn">Ver invitación</button>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    document.getElementById("btn").addEventListener("click", function () {
+        Swal.fire({
+            title: '¡Estás invitado al cumple de Sergio!',
+            text: '03 de agosto a las 3:00 PM\nCalle Cualquiera 123, Cualquier Lugar',
+            imageUrl: 'img/image.png', // Ruta del archivo que subiste
+            imageWidth: 400,
+            imageAlt: 'Invitación de cumpleaños',
+            confirmButtonText: '¡Nos vemos allá!',
+            customClass: {
+                popup: 'swal2-border-radius'
+            }
+        });
+    });
+</script>
+<script>
+    new WOW().init();
+</script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
