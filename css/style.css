@@ -486,6 +486,10 @@ h1 {
     transform: translate(-50%, -50%);
     width: 250px;
     height: 80px;
+    font-size: 30px;
+    font-family: 'Asap', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
 }
 
 
